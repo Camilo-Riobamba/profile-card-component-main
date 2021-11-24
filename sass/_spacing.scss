@@ -1,7 +1,7 @@
 @use "sass:list";
 
 //padding
-$spacing: 0rem, 0.5rem, 1rem, 2rem;
+$spacing: 0rem, 0.5rem, 1rem, 2rem, 3rem;
 $positions: (
     "": "",
     t: -top,
@@ -22,7 +22,7 @@ $positions: (
 
 @mixin spacing-position($media: ""){
     @each $position, $property in $positions {
-        @for $i from 0 through 3 {
+        @for $i from 0 through list.length($spacing) - 1 {
             @include spacing(
                 // position
                 $property,

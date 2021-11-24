@@ -1,39 +1,55 @@
 @use "sass:map";
 
 // fonts
-.text-violet{
-    color: map.get($primary, "Violet");
+.text-dark-cyan{
+    color: map.get($primary, "Dark cyan") !important;
 }
 
-.text-soft-magenta{
-    color: map.get($primary, "Soft Magenta");
+.text-dark-blue{
+    color: map.get($primary, "Very dark desaturated blue") !important;
 }
 
-.text-light{
-    color: rgba(#fff, 0.75);
+.text-grayish-blue{
+    color: map.get($primary, "Dark grayish blue") !important;
+}
+
+.text-dark-gray{
+    color: map.get($neutral, "Dark gray") !important;
 }
 
 // backgrounds
-.bg-violet{
-    background-color: map.get($primary, "Violet");
+.bg-dark-cyan{
+    background-color: map.get($primary, "Dark cyan") !important;
 }
 
-.bg-soft-magenta{
-    background-color: map.get($primary, "Soft Magenta");
+.bg-dark-blue{
+    background-color: map.get($primary, "Very dark desaturated blue") !important;
+}
+
+.bg-grayish-blue{
+    background-color: map.get($primary, "Dark grayish blue") !important;
+}
+
+.bg-dark-gray{
+    background-color: map.get($primary, "Dark gray") !important;
 }
 
 .background-back{
-    @include linear-gradient(to bottom ,map.get($primary, "Violet"), hsl(271, 40%, 49%));
-}
+    background-color: map.get($primary, "Dark cyan");
 
-.background{
-    background-image: url("../images/bg-mobile.svg");
-    background-size: cover;
-    background-position: center;
-}
-
-@include breakpoint(min, md){
     .background{
-        background-image: url("../images/bg-desktop.svg");
+        background: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+        background-position: right -100% top -100%, bottom -100% left -100%;
+        background-repeat: no-repeat;
+        background-size: 150%;
+        
+        @include breakpoint(min, md){
+            background-position: right -50% bottom -50%, top -50% left -50%;
+            background-repeat: repeat;
+        }
     }
+}
+
+.border-top{
+    border-top: 1px solid rgba(map.get($neutral, "Dark gray"), 0.75);
 }

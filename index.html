@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
 
-  <title>Frontend Mentor | Profile card component</title>
-  
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./styles/normalize.css">
-  <link rel="stylesheet" href="./styles/main.css">
+	<title>Frontend Mentor | Profile card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="./styles/normalize.css">
+	<link rel="stylesheet" href="./styles/main.css">
+
+	<style></style>
 </head>
-<body>
-  Victor Crest
-  26
-  London
 
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<body class="background-back">
+	<main class="container h-min background p-2">
+		<article class="overflow-hidden radius bg-white box-shadow">
+			<div>
+				<img src="./images/bg-pattern-card.svg" class="w-100">
+			</div>
+			<section class="text-center">
+				<img src="./images/image-victor.jpg" alt="Profile" class="circle" style="margin-top: -3rem; border: 7px solid #fff;">
+				<div class="mt-2 text-dark-blue">
+					<div>
+						<span class="d-inline-block mr-1 bolder">Victor Crest</span>
+						<span class="d-inline-block text-dark-gray">26</span>
+					</div>
+					<div class="mt-1">
+						<span class="text-dark-gray">London</span>
+					</div>
+					<div class="container mt-3 p-2 space-around border-top">
+						<div>
+							<span class="d-block bolder">80K</span>
+							<span class="d-block text-dark-gray mt-1">Followers</span>
+						</div>
+						<div>
+							<span class="d-block bolder">803K</span>
+							<span class="d-block text-dark-gray mt-1">Likes</span>
+						</div>
+						<div>
+							<span class="d-block bolder">1.4K</span>
+							<span class="d-block text-dark-gray mt-1">Photos</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</article>
+	</main>
 </body>
+
 </html>
