@@ -4,7 +4,8 @@
   "description": "![Design preview for the Profile card component coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass:styles"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Camilo-Riobamba/profile-card-component-main/issues"
   },
-  "homepage": "https://github.com/Camilo-Riobamba/profile-card-component-main#readme"
+  "homepage": "https://github.com/Camilo-Riobamba/profile-card-component-main#readme",
+  "devDependencies": {
+    "sass": "^1.43.4"
+  }
 }

@@ -1,0 +1,29 @@
+@import "variables";
+@import "_breakpoints";
+@import "_gradients";
+
+// properties
+@import "backgrounds";
+@import "borders";
+@import "buttons";
+@import "containers";
+@import "display";
+@import "flex";
+@import "fonts";
+@import "overflow";
+@import "position";
+@import "shadows";
+@import "spacing";
+@import "dimensions";
+
+// personalized styles
+@import "styles";
+
+html {
+    font-size: $font-size;
+    font-family: $font-family;
+
+    * {
+        box-sizing: border-box;
+    }
+}

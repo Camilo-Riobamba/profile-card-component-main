@@ -1,0 +1,31 @@
+//fonts
+@font-face {
+	font-family: "Kumbh Sans";
+	src: url("../fonts/KumbhSans-VariableFont_wght.ttf");
+}
+
+$font-family: "Kumbh Sans";
+$font-size: 18px;
+
+// colors
+$primary: (
+	"Dark cyan": hsl(185, 75%, 39%),
+	"Very dark desaturated blue": hsl(229, 23%, 23%),
+	"Dark grayish blue": hsl(227, 10%, 46%)
+);
+
+$neutral: (
+	"Dark gray": hsl(0, 0%, 59%)
+);
+
+//breakpoints
+$list_breakpoints: xs, sm, md, lg, xl, xxl;
+
+$breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px,
+);

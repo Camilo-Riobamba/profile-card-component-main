@@ -1,0 +1,26 @@
+// displays
+.d-block {
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.d-none {
+    display: none;
+}
+
+@include breakpoint(min, sm){
+    .d-block-sm {
+        display: block;
+    }
+    
+    .d-inline-block-sm {
+        display: inline-block;
+    }
+    
+    .d-none-sm {
+        display: none;
+    }
+}

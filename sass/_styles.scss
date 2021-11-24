@@ -1,0 +1,39 @@
+@use "sass:map";
+
+// fonts
+.text-violet{
+    color: map.get($primary, "Violet");
+}
+
+.text-soft-magenta{
+    color: map.get($primary, "Soft Magenta");
+}
+
+.text-light{
+    color: rgba(#fff, 0.75);
+}
+
+// backgrounds
+.bg-violet{
+    background-color: map.get($primary, "Violet");
+}
+
+.bg-soft-magenta{
+    background-color: map.get($primary, "Soft Magenta");
+}
+
+.background-back{
+    @include linear-gradient(to bottom ,map.get($primary, "Violet"), hsl(271, 40%, 49%));
+}
+
+.background{
+    background-image: url("../images/bg-mobile.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+@include breakpoint(min, md){
+    .background{
+        background-image: url("../images/bg-desktop.svg");
+    }
+}

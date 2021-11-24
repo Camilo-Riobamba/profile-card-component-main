@@ -1,0 +1,13 @@
+.text-center {
+    text-align: center;
+}
+
+@include breakpoint(min, md){
+    .text-left-md{
+        text-align: left;
+    }
+
+    .text-right-md{
+        text-align: right;
+    }
+}
